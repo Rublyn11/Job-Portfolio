@@ -47,7 +47,7 @@ const Testimonials = () => {
         <Slider {...settings}>
           {testimonials.map((testimonial, index) => (
             <div key={index} className="border border-gray-200 rounded-lg overflow-hidden bg-white shadow-md p-6">
-              <div className="flex items-center mb-4">
+              <div className="flex md:flex-col sm:flex-col items-center mb-4">
                 <img src={testimonial.image} alt={testimonial.name} className="w-12 h-12 rounded-full mr-4" />
                 <div>
                   <p className="text-lg text-gray-800 mb-1">{testimonial.quote}</p>
